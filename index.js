@@ -30,13 +30,13 @@ function handleMouseExit(event) {
   console.log(`Left ${event.target.textContent} button`);
 }
 
-// stopButton.addEventListener("mouseenter", handleMouseEntered);
-// slowButton.addEventListener("mouseenter", handleMouseEntered);
-// goButton.addEventListener("mouseenter", handleMouseEntered);
+stopButton.addEventListener("mouseenter", handleMouseEntered);
+slowButton.addEventListener("mouseenter", handleMouseEntered);
+goButton.addEventListener("mouseenter", handleMouseEntered);
 
-// stopButton.addEventListener("mouseleave", handleMouseExit);
-// slowButton.addEventListener("mouseleave", handleMouseExit);
-// goButton.addEventListener("mouseleave", handleMouseExit);
+stopButton.addEventListener("mouseleave", handleMouseExit);
+slowButton.addEventListener("mouseleave", handleMouseExit);
+goButton.addEventListener("mouseleave", handleMouseExit);
 
 document.body.addEventListener("click", function (event) {
   if (event.target === stopButton) {
